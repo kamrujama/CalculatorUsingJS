@@ -10,10 +10,10 @@ function isOperator(num){
 }
 
 function display(num){
-    if(output.innerText === "0"){
+    if(output.value === "0"){
         if(num != '0' && num != "00"){
             if(num == '.' || isOperator(num)){
-                output.value = "0" + num
+                output.value = output.value + num
             }
             else{
                 output.value = num
